@@ -186,5 +186,57 @@ border:  2px solid rgb(158, 48, 48);
     height: 100%;
 }
 
+/* footer */
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-left{
+    flex-basis:35% ;
+}
+.socal-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s ;
+   
+}
+.socal-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px) ;
 
+}
 
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-right form{
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form input, form textarea {
+    width: 100%;
+    border:none;
+    background: #262626;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+}
+  
+.btn-primary{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background: #ff004f;
+    padding: 8px;
+    border-radius: 8px;
+}
+/* .btn-submit{
+    width: 1rem;
+} */
