@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi Mohimanul Haque</title>
+    <link rel="stylesheet" href="style/desin.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="name">
+                <p>Mohaimanul</p>
+            </div>
+            <div class="menu-container">
+                <a href="" class="menu-option">Home</a>
+                <a href="" class="menu-option">About</a>
+                <a href="" class="menu-option">Services</a>
+                <a href="" class="menu-option">Portfolio</a>
+                <a href="" class="menu-option">Contact</a>
+            </div>
+        </nav>
+        <div class="header-title-container">
+            <h2>kazi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non nulla distinctio cupiditate saepe nostrum totam rerum quas, in reprehenderit?</p>
+        </div>
+         
+    
+    </header>
+    <main>
+        <section class="about-section">
+            <div class="about-img">
+                <img src="" alt="">
+            </div>
+            <div class="about-title-container">
+                <h3>About</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, nobis harum vero assumenda libero eius maxime magnam eligendi enim aliquid?</p>
+
+                <div class="skill-experience-edu">
+                    <p class="tab-link active-link" onclick="opentab('skills')">Skill</p>
+                    <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-link " onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>kk</span>kk</li>
+                        <li><span>kk</span>ll</li>
+                        <li><span>jj</span>hh</li>
+                    </ul>
+                </div>
+                <div class="tab-content " id="experience">
+                    <ul>
+                        <li><span>kk</span>kk</li>
+                        <li><span>kk</span>kk</li>
+                        <li><span>kk</span>ytt</li>
+                    </ul>
+                </div>
+                <div class="tab-content " id="education">
+                    <ul>
+                        <li><span>jj</span>jj</li>
+                        <li><span>yy</span>tt</li>
+                        <li><span>jj</span>dd</li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-link");
+                var tabcontents = document.getElementsByClassName("tab-content");
+
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+               
+            </script>
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
