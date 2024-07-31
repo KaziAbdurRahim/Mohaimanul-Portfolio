@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kazi Mohimanul Haque</title>
     <link rel="stylesheet" href="style/desin.css">
     <script src="https://kit.fontawesome.com/137d942663.js" crossorigin="anonymous"></script>
+
+   
 </head>
-<body class="container">
-    <header class="header">
-        <nav class="navbar">
+<body >
+    <header class="header container" id="Home">
+        <nav class="navbar container">
             <div class="name">
                 <p>Mohaimanul</p>
             </div>
-            <div class="menu-container">
-                <a href="" class="menu-option"><p>Home</p></a>
-                <a href="" class="menu-option"><p>About</p></a>
-                <a href="" class="menu-option"><p>Services</p></a>
-                <a href="" class="menu-option"><p>Portfolio</p></a>
-                <a href="" class="menu-option"><p>Contact</p></a>
+            <div class="menu-container ">
+                <a href="#Home" class="menu-option"><p>Home</p></a>
+                <a href="#About" class="menu-option"><p>About</p></a>
+                <a href="#Services" class="menu-option"><p>Services</p></a>
+                <a href="#Portfolio" class="menu-option"><p>Portfolio</p></a>
+                <a href="#Contact" class="menu-option"><p>Contact</p></a>
             </div>
         </nav>
+        <!-- <script>
+            window.onscroll = function() {
+    myFunction();
+};
 
-        <div class="banner-container">
+var navbar = document.querySelector(".navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset <= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+        </script> -->
+
+        <div class="banner-container container">
             <div class="header-title-container">
                 <p>Hello, everyone</p>
                 <h2>I am Kazi Mohaimanul Haque</h2>
@@ -42,18 +62,15 @@
                 <img src="#" alt="Mohimanuls image">
             </div>
 
-        </div>
-        
-         
-    
+        </div>  
     </header>
-    <main>
-        <section class="about-section">
+    <main class="container">
+        <section class="about-section" id="About">
             <div class="about-img">
                 <img src="#" alt="mohimanuls image">
             </div>
             <div class="about-title-container">
-                <h3>About</h3>
+                <h2>About</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, nobis harum vero assumenda libero eius maxime magnam eligendi enim aliquid?</p>
 
                 <div class="skill-experience-edu">
@@ -102,7 +119,7 @@
             </script>
 
         </section>
-        <section class="serveces">
+        <section class="serveces" id="Services">
             <h2>Services</h2>
             <div class="services-container">       
                 <div class="servies1">
@@ -123,8 +140,8 @@
             </div> 
 
         </section>
-        <section class="portfolio-section">
-            <h3>My work</h3>
+        <section class="portfolio-section" id="Portfolio">
+            <h2>My work</h2>
             <div class="work-container">
                 <div class="work">
                     <img src="#" alt="first work">
@@ -153,8 +170,8 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="contact-container">
+    <footer id="Contact">
+        <div class="contact-container container">
             <div class="contact-left">
                 <h1>Contact Me</h1>
                 <p > <i class="fa-solid fa-envelope email-icon"></i>emaii@.com</p>
@@ -182,9 +199,11 @@
                
             </div>
         </div>
-        <hr class="line">
-        <p class="footer"> &copy; All right reserved 2024 </p>
-
+          <div class="end">
+            <hr class="line">
+           <p class="footer"> &copy; All right reserved 2024 </p>
+        </div>
+        
         <!-- <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxayTHZ64NqX9CfGo8WKX9ElDCak5HrmeDmJKNcbsH8pmTRZsoXMTa3YEol3bjF08ZW/exec'
             const form = document.forms['submit-to-google-sheet']
