@@ -5,8 +5,10 @@
 }
 
 body{
-    background-color: black;
-    color: white;
+    /* skynavyblue -- #134B70 */
+    background-color:#1A3636 ;
+    /* background-color:#201E43; */
+    color: whitesmoke;
 }
 /* shared style starts */
 .container{
@@ -41,16 +43,26 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: .5rem;
+   
+    
 }
-/* .navbar{
-    position: sticky;
+
+.sticky {
+    background: #40534C;
+    position: fixed;
     top: 0;
-    background-color: #333; 
+    width: 100%;
     z-index: 100;
-} */
+  }
+
 .name{   
-    /* flex-basis:s 20%; */
+    flex-basis:s 20%;
     text-align: center;
+    margin-left: 2rem;
+}
+.name >span{
+
+    color: rgb(13, 239, 163);
 }
 .menu-container {
     flex-basis: 50%;
@@ -75,7 +87,7 @@ nav{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(255, 0, 0);
+    background: #D6BD98;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -88,7 +100,7 @@ nav{
 
 .menu-container a p:hover{
     /* width: 50%; */
-    color:red;
+    color:#D6BD98;
 }
 .banner-container{
     display: flex;
@@ -172,7 +184,7 @@ nav{
     content: '';
     width: 0;
     height: 3px;
-    background:red;
+    background:#D6BD98;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -188,14 +200,14 @@ nav{
 
 .tab-link.active-link::after{
     width: 100%;
-    color: red;
+    color: #D6BD98;
 }
 .tab-content ul li{
     list-style: none;
 
 }
 .tab-content span{
-    color: red;
+    color: #D6BD98;
 }
 .tab-content{
     display: none;
@@ -221,7 +233,7 @@ nav{
 }
 .services-container div{
     padding: .4rem;
-    background: rgb(30, 30, 30);
+    background: #40534C;
     border-radius: 9px;
     transition:  background 0.5s, transform .5s ;
     text-align: center;
@@ -232,7 +244,7 @@ nav{
     color: white;
 }
 .services-container div:hover{
-    background: red;
+    background: #677D6A;
     transform: translate(-10px);
 }
 /* port folio or work section */
@@ -271,7 +283,7 @@ nav{
     width: 100%;
     /* height: 100%; */
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),red);
+    background: linear-gradient(rgb(26, 54, 54),#677D6A);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -305,7 +317,8 @@ footer{
     padding: .8rem;
     padding-bottom: .8rem;
     flex-basis: 5%;
-    background: #262626;
+    /* background: #262626; */
+    background: #40534C;
 }
 .contact-container{
     flex-basis: 80%;
@@ -337,7 +350,6 @@ footer{
     margin: .5rem;
     text-decoration: none;
     font-size: 1.9rem;
-  
     gap: 1rem;
     /* margin-right: 15px; */
     color: #ababab;
@@ -346,7 +358,8 @@ footer{
    
 }
 .socal-icons a:hover{
-    color:red;
+    color:#D6BD98;
+    /* color:#677D6A ; */
     transform: translateY(-5px) ;
 
 }
@@ -367,7 +380,11 @@ form{
 form input, form textarea {
     width: 100%;
     border:none;
-    background: #262626;
+    /* background: #262626; */
+    /* background:#D6BD98 ;  */
+    /* background: #677D6A; */
+    background: #40534C;
+    
     padding: 1rem;
     color: white;
     border-radius: .5rem;
@@ -377,7 +394,7 @@ form input, form textarea {
     margin: 1rem;
     text-decoration: none;
     color: white;
-    background: red;
+    background: #677D6A;
     padding: .5rem;
     border-radius: .5rem;
     width: 8rem;
