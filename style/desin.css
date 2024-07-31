@@ -346,3 +346,8 @@ form input, form textarea {
     margin-top: .3rem;
     color: #ababab;
 }
+#msg, #success-message{
+    color: green;
+    margin-top: -65px;
+    display: block;
+}
