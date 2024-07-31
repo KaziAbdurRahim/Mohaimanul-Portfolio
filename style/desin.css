@@ -52,9 +52,10 @@ nav{
 .menu-container a {
     text-decoration: none;
     font-size: 1rem;
-    color: rgb(255, 255, 255);
+    color: rgb(247, 247, 247);
     position: relative;   
 }
+
 .menu-container a::after{
     content: '';
     width: 0;
@@ -66,8 +67,13 @@ nav{
     transition: 0.5s;
 }
 .menu-container a:hover::after{
-    width: 100%;
-    color: #ff004f;
+    width: 50%;
+    /* color: #ff004f; */
+}
+
+.menu-container a p:hover{
+    /* width: 50%; */
+    color:red;
 }
 .banner-container{
     display: flex;
@@ -78,6 +84,9 @@ nav{
     flex-basis: 45%;
     text-align: left;
     /* border:  2px solid rgb(158, 48, 48); */
+}
+.header-title-container>h2, .header-title-container>p{
+    margin-bottom:.5rem ;
 }
 .banner-img-container{
     flex-basis: 45%;
@@ -112,12 +121,16 @@ nav{
     flex-basis: 60%;
     padding: .5rem;
 }
+.about-title-container > h3 , .about-title-container > p {
+   margin-bottom: .5rem;
+}
+
 .skill-experience-edu{
     display: flex;
     /* border: 2px solid red;   */
 }
 .tab-content{
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 .tab-link{
     font-size: 18px;
@@ -189,11 +202,14 @@ nav{
     transform: translate(-10px);
 }
 /* port folio or work section */
+.portfolio-section{
+    margin-top: 1rem;
+}
+.portfolio-section h3{
+    margin-left: 1rem;
+}
 .work-container{
     margin-top: 1rem;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    grid-gap: .5rem; */
     display: flex;
     justify-content:space-around ;
 
@@ -218,7 +234,7 @@ nav{
     width: 100%;
     /* height: 100%; */
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6),red);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -244,30 +260,46 @@ nav{
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
 }
 .contact-left{
+    padding: .5rem;
+    /* border: 2px solid red; */
     flex-basis:35% ;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+/* .contact-left h1 p{
+    gap: 1rem;
+} */
+
 .email-icon, .phone-icon{
-    color: red;
+    color:  #ababab;
+    margin-right: .2rem;
 }
 .socal-icons a{
+    margin: .5rem;
     text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
+    font-size: 1.9rem;
+  
+    gap: 1rem;
+    /* margin-right: 15px; */
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s ;
    
 }
 .socal-icons a:hover{
-    color: #ff004f;
+    color:red;
     transform: translateY(-5px) ;
 
 }
 
 .contact-right{
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 .contact-right form{
     width: 100%;
@@ -281,26 +313,27 @@ form input, form textarea {
     width: 100%;
     border:none;
     background: #262626;
-    padding: 15px;
+    padding: 1rem;
     color: white;
-    border-radius: 8px;
+    border-radius: .5rem;
 }
-  
-.btn-primary{
+/* #ff004f */
+.btn-primary {
     margin: 1rem;
     text-decoration: none;
     color: white;
-    /* display: inline-block; */
-    background: #ff004f;
+    background: red;
     padding: .5rem;
     border-radius: .5rem;
-    /* max-width: 10rem; */
     width: 8rem;
     border: none;
 }
-/* .btn-submit{
-    width: 1rem;
-} */
+.btn-primary a{
+    text-decoration: none;
+    color: white;
+
+}
+
 .line{
     margin-top: 6px;
     border: none;
