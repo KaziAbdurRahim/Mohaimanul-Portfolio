@@ -60,9 +60,9 @@ nav{
     text-align: center;
     margin-left: 2rem;
 }
-.name >span{
-
-    color: rgb(13, 239, 163);
+.name p span{
+    font-size: 2rem;
+    color: rgb(154, 163, 153);
 }
 .menu-container {
     flex-basis: 50%;
