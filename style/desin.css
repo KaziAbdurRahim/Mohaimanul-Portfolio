@@ -62,6 +62,7 @@ nav{
 }
 .name p span{
     font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(154, 163, 153);
 }
 .menu-container {
